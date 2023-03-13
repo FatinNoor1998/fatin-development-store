@@ -36,12 +36,12 @@
         {% if enable_filtering %}
           {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
           <div class="collection-hero color-background-1 gradient">
-<!--             <div class="collection-hero__inner page-width"> -->
-<!--               <div class="collection-hero__text-wrapper"> -->
+            <div class="collection-hero__inner page-width">
+              <div class="collection-hero__text-wrapper">
                 <h2 class="collection-hero__title facets__heading">
                   <span class="visually-hidden">Collection: </span>Products</h2>
-<!--           </div> -->
-<!--           </div> -->
+          </div>
+          </div>
           </div>
           <div id="FacetsWrapperDesktop"{% if filter_type == 'horizontal' %} class="facets__wrapper"{% endif %}>
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
