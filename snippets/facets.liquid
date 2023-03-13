@@ -682,6 +682,11 @@ svg.icon.icon-caret{
                 {%- for option in results.sort_options -%}
                   <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                 {%- endfor -%}
+                   <option
+                                  value= "null"
+                                >
+                                  Sort by
+                                </option>
               </select>
               {% render 'icon-caret' %}
             </div>
