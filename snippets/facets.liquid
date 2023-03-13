@@ -681,8 +681,8 @@ svg.icon.icon-caret{
               <select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message">
                 {%- for option in results.sort_options -%}
                     {%- if forloop.first -%}
-                        <option value="">sort By</option>
-                        <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+<!--                         <option value="">sort By</option> -->
+                        <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}kkk</option>
                     {%  else %}
                       <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                     {% endif %}
