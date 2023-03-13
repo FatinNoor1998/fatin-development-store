@@ -57,7 +57,7 @@ svg.icon.icon-caret{
             <div class="collection-hero__inner page-width">
               <div class="collection-hero__text-wrapper">
                 <h2 class="collection-hero__title facets__heading">
-                  SHOP • {{ collection.title }}({{ collection.products_count }})
+                  SHOP • {{ collection.title }}
                     <span id="ProductCountDesktop">
                       {%- if results.results_count -%}
                         {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
