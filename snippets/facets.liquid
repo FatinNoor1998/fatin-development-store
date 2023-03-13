@@ -58,7 +58,7 @@ svg.icon.icon-caret{
               <div class="collection-hero__text-wrapper">
                 <h2 class="collection-hero__title facets__heading">
                   SHOP • {{ collection.title }}
-                    <span id="ProductCountDesktop">
+                    <span id="ProductCountDesktop">(
                       {%- if results.results_count -%}
                         {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
                       {%- elsif results.products_count == results.all_products_count -%}
@@ -66,6 +66,7 @@ svg.icon.icon-caret{
                       {%- else -%}
                         {{ 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
                       {%- endif -%}
+                       )
                     </span>
                 </h2>
               </div>
