@@ -13,6 +13,13 @@
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
 
+<style>
+.collection-hero__title.facets__heading{
+  text-transformation: uppercase;
+}
+
+</style>
+
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
