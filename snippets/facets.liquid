@@ -301,6 +301,12 @@ svg.icon.icon-caret{
                     </price-range>
                   </div>
                 </details>
+
+                        <facet-remove>
+                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                            {{ 'products.facets.reset' | t }}
+                          </a>
+                        </facet-remove>
               {% endcase %}
             {%- endfor -%}
             <noscript>
@@ -360,7 +366,6 @@ svg.icon.icon-caret{
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message">
-            kkk
                     {%- for option in results.sort_options -%}
                       <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                     {%- endfor -%}
