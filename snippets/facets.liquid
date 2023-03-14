@@ -301,18 +301,18 @@ svg.icon.icon-caret{
                     </price-range>
                   </div>
                 </details>
-
-              <div class="reset-button">
-                          <a href="https://fatin-development-store.myshopify.com/collections/all" class="">
-                            Reset
-                          </a>
-              </div>
               {% endcase %}
             {%- endfor -%}
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.filter_button' | t }}</button>
             </noscript>
           </div>
+
+                        <div class="">
+                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                            {{ 'products.facets.reset' | t }}
+                          </a>
+                        </facet-remove>
           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
           {%- if filter_type == 'horizontal' -%}
             <div class="active-facets active-facets-desktop">
