@@ -312,11 +312,6 @@ svg.icon.icon-caret{
 
           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
           {%- if filter_type == 'horizontal' -%}
-                               <div class="reset-button">
-                          <a href="https://fatin-development-store.myshopify.com/collections/all" class="">
-                            RESET
-                          </a>
-                 </div>
             <div class="active-facets active-facets-desktop">
               {%- for filter in results.filters -%}
                 {%- for value in filter.active_values -%}
