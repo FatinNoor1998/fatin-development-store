@@ -57,7 +57,7 @@
     </div>
   {%- elsif section.settings.image_2 == blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
-     {{ 'placeholder.png' | asset_url | image_url: '500px' | image_tag | image_url: width: 200}}
+     {{ 'placeholder.png' | asset_url | image_tag | image_url: width: 200}}
     </div>
   {%- endif -%}
   {%- if section.settings.image_2 != blank -%}
